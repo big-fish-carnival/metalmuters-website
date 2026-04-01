@@ -12,11 +12,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --animate-spin-backcircle: spin-reverse 16s linear infinite;
+  --animate-spin-frontcircle: spin 48s linear infinite;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+@keyframes spin-reverse {
+  from { transform: rotate(360deg) };
+  to { transform: rotate(0deg) };
 }
 
 body {
