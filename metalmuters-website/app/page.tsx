@@ -43,20 +43,51 @@ export default function Home() {
                 height={706}
               />
             </div>
-            <div className="flex flex-col items-center gap-6 text-center py-8 z-100">
-              <p className="max-w-sm text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            <div className="flex flex-col items-center gap-6 text-center py-8 md:py-4 z-100">
+              <p className="px-2 max-w-sm text-lg leading-8 text-zinc-400">
                 Half-puzzle, half-roguelike where you turn lead into gold!
               </p>
             </div>
             <div className="flex flex-col gap-4 text-base font-medium sm:flex-row z-100">
-              <a
-                className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-                href="https://store.steampowered.com/app/4287050/MetalMuters/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Play Now
-              </a>
+              <h2 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-zinc-100">
+                Play demo now!
+              </h2>
+            </div>
+            <div className="flex flex-col gap-4 text-base font-medium sm:flex-row py-4 z-100">
+              <div className="flex flex-col items-center">
+                <a
+                  className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#000000] text-background transition-colors hover:bg-[#202020] w-[158px]"
+                  href="https://store.steampowered.com/app/4287050/MetalMuters/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/logo_steam.png"
+                    alt="steam-logo"
+                    className="ms-4 z-40"
+                    width={128}
+                    height={32}
+                  />
+                </a>
+                <span className="text-zinc-400">For Windows/Linux</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <a
+                  className="flex h-12 items-center justify-center gap-2 rounded-sm bg-[#fa5c5c] text-background transition-colors hover:bg-[#fa7c7c] w-[158px]"
+                  href="https://bigfishcarnival.itch.io/metalmuters"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/itchio-logo-white.svg"
+                    alt="steam-logo"
+                    className="z-40"
+                    width={96}
+                    height={24}
+                  />
+                </a>
+                <span className="text-zinc-400">For Web/Mobile</span>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +96,7 @@ export default function Home() {
             <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-zinc-600">
               Academia
             </h1>
-            <p className="max-w-lg text-lg leading-8 text-center text-zinc-400">
+            <p className="px-2 max-w-lg text-lg leading-8 text-center text-zinc-400">
               Solve 130+ puzzles that challenges your understanding on the game mechanic.
             </p>
             <Image
@@ -79,7 +110,7 @@ export default function Home() {
             <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-zinc-600">
               Venture
             </h1>
-            <p className="max-w-lg text-lg leading-8 text-center text-zinc-400">
+            <p className="px-2 max-w-lg text-lg leading-8 text-center text-zinc-400">
               A 28-stage roguelike experience where you produce & sell metals to earn as much coins as possible.
             </p>
             <Image
